@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="Parts_pane" prefHeight="598.0" prefWidth="600.0" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="C482_Proj_ID_476819.View_Controller.Part_ScreenController">
+<AnchorPane id="AnchorPane" fx:id="Parts_pane" prefHeight="598.0" prefWidth="600.0" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inventory_Control.View_Controller.Part_ScreenController">
    <children>
       <VBox alignment="CENTER" prefHeight="598.0" prefWidth="634.0" spacing="20.0">
          <children>

@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="Main_Screen_pane" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="C482_Proj_ID_476819.View_Controller.Main_ScreenController">
+<AnchorPane id="AnchorPane" fx:id="Main_Screen_pane" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inventory_Control.View_Controller.Main_ScreenController">
     <children>
       <VBox alignment="TOP_RIGHT" spacing="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
