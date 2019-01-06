@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Parts_pane" prefHeight="598.0" prefWidth="600.0" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="C482_Proj_ID_476819.View_Controller.Part_ScreenController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="598.0" prefWidth="634.0" spacing="20.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="30.0">
+               <children>
+                  <Label fx:id="Part_Label" prefHeight="21.0" prefWidth="198.0" text="* Part" textFill="#140094">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="inhouse_Radio" mnemonicParsing="false" prefHeight="21.0" prefWidth="116.0" selected="true" text="In-House">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Category" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="outsourced_Radio" mnemonicParsing="false" prefHeight="21.0" prefWidth="126.0" selected="true" text="Outsourced" toggleGroup="$Category" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="5.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="176.0" text="ID" />
+                  <TextField fx:id="ID_Text" alignment="CENTER" editable="false" style="-fx-background-color: #DDDDDD; -fx-border-width: 1; -fx-border-color: #AAAAAA;" text="Auto Gen - Disabled">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="176.0" text="Name" />
+                  <TextField fx:id="Name_Text" alignment="CENTER" text="Part Name">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="176.0" text="Inv" />
+                  <TextField fx:id="Inv_Text" alignment="CENTER" text="Inv">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="176.0" text="Price/Cost" />
+                  <TextField fx:id="Price_Text" alignment="CENTER" text="Price/Cost">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="176.0" text="Max" />
+                  <TextField fx:id="Max_Text" alignment="CENTER" prefHeight="41.0" prefWidth="85.0" text="Max">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="60.0" text="Min" />
+                  <TextField fx:id="Min_Text" alignment="CENTER" prefHeight="41.0" prefWidth="85.0" text="Min">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label fx:id="Source_Label" prefHeight="21.0" prefWidth="176.0" text="Company Name" />
+                  <TextField fx:id="Source_Text" alignment="CENTER" text="Comp Nm">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" spacing="20.0">
+               <children>
+                  <Button fx:id="Save_btn" mnemonicParsing="false" onAction="#handleButton_Save_btn" prefWidth="100.0" text="Save" />
+                  <Button fx:id="Cancel_btn" mnemonicParsing="false" onAction="#handleButton_Cancel_btn" prefWidth="100.0" text="Cancel" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="28.0" />
+         </padding>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
